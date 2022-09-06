@@ -1,0 +1,6 @@
+framework module Pods_ApiJsonTests {
+  umbrella header "Pods-ApiJsonTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
