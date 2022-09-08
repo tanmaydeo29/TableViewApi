@@ -55,7 +55,7 @@ extension ViewController : UITableViewDelegate , UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellTB", for: indexPath) as! TableViewCell
-        cell.nameLabel.text = myArray[indexPath.row].firstName
+        cell.nameLabel.text = "\(myArray[indexPath.row].firstName) \(myArray[indexPath.row].maidenName) \(myArray[indexPath.row].lastName)"
         cell.emailLabel.text = myArray[indexPath.row].email
         let imageUrl = URL(string: myArray[indexPath.row].image)
         cell.profileImage.kf.setImage(with: imageUrl)
